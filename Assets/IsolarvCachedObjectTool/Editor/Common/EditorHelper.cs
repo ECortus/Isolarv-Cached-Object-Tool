@@ -1,18 +1,13 @@
 ﻿using System;
 using System.IO;
 using System.Text.RegularExpressions;
+using IsolarvCachedObjectTool.Runtime;
 using UnityEditor;
 using UnityEngine;
 using Object = System.Object;
 
 namespace IsolarvCachedObjectTool.Editor
 {
-    public interface IValidationObject
-    {
-        public void OnCreateValidate<T>(T oldObject) where T : ScriptableObject, IValidationObject;
-        public void OnUpdateValidate<T>(T oldObject) where T : ScriptableObject, IValidationObject;
-    }
-    
     public static class EditorHelper
     {
         public static Object CreateOrGetNewScriptableAsset<T>(string newName, string path, 

@@ -23,6 +23,8 @@ namespace IsolarvCachedObjectTool.Editor
                 return _instance;
             }
         }
+
+        public static bool IsExist() => Instance != null;
         
         [Serializable]
         public class CachedObject

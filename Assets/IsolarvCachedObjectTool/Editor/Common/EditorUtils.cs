@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using IsolarvCachedObjectTool.Runtime;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -48,11 +49,24 @@ namespace IsolarvCachedObjectTool.Editor
             return newName;
         }
 
+        public static bool IsToolInitialized()
+        {
+            var folderValue = AssetDatabase.IsValidFolder(EditorPaths.CACHED_OBJECTS_PATH);
+            var directoryExists = CachedObjectDirectory.IsExist();
+            
+            return folderValue && directoryExists;
+        }
+
         public static Object CreateOrGetNewCachedAsset<T>(string newName, string folder, 
             SerializedProperty parentProperty, SerializedProperty newDataProperty, T oldData) where T : ScriptableObject, IValidationObject
         {
             string path = EditorPaths.CACHED_OBJECTS_PATH;
             path += $"/{folder}";
+
+            if (!AssetDatabase.IsValidFolder(path))
+            {
+                AssetDatabase.CreateFolder(EditorPaths.CACHED_OBJECTS_PATH, folder);
+            }
 
             T instance = null;
             

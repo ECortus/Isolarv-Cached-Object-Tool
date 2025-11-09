@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 277b63a063f57244b83303561667724d, type: 3}
   m_Name: Cached Objects Directory
   m_EditorClassIdentifier: 
-  objects: []
+  objects:
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: 31a637a494766bc488b12c3f168d7ccc, type: 2}
+    propertyName: OverrideData
+    isArrayElement: 0
+    arrayElementIndex: -1
+    instanceId: -28220
+    assetName: new-test-data-cached-by-new-test-so-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-cached-by-new-test-so-of-type-testso.asset

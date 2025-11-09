@@ -31,6 +31,12 @@ namespace IsolarvCachedObjectTool.Editor
             var oldEffectData = defaultData.objectReferenceValue as T;
             if (!oldEffectData)
                 return;
+            
+            if (!EditorUtils.IsToolInitialized())
+            {
+                Debug.Log("[Isolarv Cached Object Tool] Tool is not initialized. Try to initialize...");
+                CachedObjectMethods.InitializeCacheDirectory();
+            }
 
             var newData = property.FindPropertyRelative("newData");
 

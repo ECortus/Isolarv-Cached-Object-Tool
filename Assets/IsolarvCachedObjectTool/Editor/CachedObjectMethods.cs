@@ -17,12 +17,12 @@ namespace IsolarvCachedObjectTool.Editor
             
             if (!AssetDatabase.IsValidFolder(folder))
             {
-                if (!AssetDatabase.IsValidFolder("Assets/Resources"))
+                if (!AssetDatabase.IsValidFolder(EditorPaths.RESOURCES_PATH))
                 {
                     AssetDatabase.CreateFolder("Assets", "Resources");
                 }
                 
-                AssetDatabase.CreateFolder("Assets/Resources", "Cached Objects");
+                AssetDatabase.CreateFolder(EditorPaths.RESOURCES_PATH, "Cached Objects");
             }
 
             if (AssetDatabase.LoadAssetAtPath<CachedObjectDirectory>(path) != null)
@@ -75,7 +75,7 @@ namespace IsolarvCachedObjectTool.Editor
                 for (int j = 0; j < cachedInResources.Count; j++)
                 {
                     var cachedResource = cachedInResources[j];
-                    if (cached.IsSameCache(cachedResource))
+                    if (cached.IsExistedCache() && cached.IsSameCache(cachedResource))
                     {
                         cachedValid.Add(cached);
                         inResourcesValid.Add(cachedResource);
