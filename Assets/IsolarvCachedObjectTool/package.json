@@ -1,0 +1,17 @@
+  
+{
+	"name": "com.isolarv.cached-object-tool",
+	"version": "1.1.0",
+	"author": 
+	{
+		"name" : "Isolarv",
+		"email" : "",
+		"url" : ""
+	},
+	"displayName": "Isolarv Cached Object Tool",
+	"category": "Isolarv",
+	"description": "Tool to create cached scriptable objects.",
+	"license": "MIT",
+	"hideInEditor": false,
+	"dependencies": { }
+}
