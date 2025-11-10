@@ -12,11 +12,11 @@ Insert dependencies packages into project `manifest.json`:
 After import package via UPM:
 
 ```
-https://github.com/ECortus/Isolarv-Cached-Object-Tool.git?path=Assets/IsolarsCachedObjectTool
+https://github.com/ECortus/Isolarv-Cached-Object-Tool.git?path=Assets/IsolarvCachedObjectTool
 ```
 
 or insert directly to `manifest.json`:
 
 ```
-"com.isolarv.cached-object-tool": "https://github.com/ECortus/Isolarv-Cached-Object-Tool.git?path=Assets/IsolarsCachedObjectTool",
+"com.isolarv.cached-object-tool": "https://github.com/ECortus/Isolarv-Cached-Object-Tool.git?path=Assets/IsolarvCachedObjectTool",
 ```
