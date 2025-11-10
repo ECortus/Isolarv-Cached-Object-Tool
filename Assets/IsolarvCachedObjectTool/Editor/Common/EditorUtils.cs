@@ -86,7 +86,7 @@ namespace IsolarvCachedObjectTool.Editor
             }
 
             if (!instance)
-                throw new Exception($"Failed to create or get new cached asset: {newName}");
+                throw new Exception($"[Isolarv Cached Object Tool] Failed to create or get new cached asset: {newName}");
             
             instance.OnUpdateValidate(oldData);
             return instance;

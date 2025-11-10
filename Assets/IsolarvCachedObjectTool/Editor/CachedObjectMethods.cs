@@ -36,6 +36,20 @@ namespace IsolarvCachedObjectTool.Editor
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
         }
+        
+        [MenuItem("Tools/Isolarv/Cached & Override/Update Cache Assets", false, 117)]
+        public static void UpdateCacheAssets()
+        {
+            var instances = CachedObjectDirectory.Objects;
+            for (int i = 0; i < instances.Count; i++)
+            {
+                var instance = instances[i].GetOwner();
+                EditorUtility.SetDirty(instance);
+            }
+            
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
+        }
 
         [MenuItem("Tools/Isolarv/Cached & Override/Clear Unused Cache", false, 120)]
         public static void ClearUnusedCache()

@@ -41,6 +41,9 @@ namespace IsolarvCachedObjectTool.Editor
             [SerializeField, ReadOnly] int instanceId;
             [SerializeField, ReadOnly] string assetName;
             [SerializeField, ReadOnly] string assetPath;
+            
+            public Object GetOwner() => owner;
+            public Object GetPrimaryObject() => primaryObject;
 
             public CachedObject(Object obj, SerializedProperty parentProperty)
             {
@@ -94,9 +97,11 @@ namespace IsolarvCachedObjectTool.Editor
             public bool IsExistedCache()
             {
                 bool isExisted = AssetDatabase.LoadAssetAtPath<Object>(assetPath);
+                
+                bool isOwnerExisted = owner;
                 bool isDefaultExisted = primaryObject;
                 
-                return isExisted && isDefaultExisted;
+                return isExisted && isOwnerExisted && isDefaultExisted;
             }
             
             public void DestroyCache()

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02cb1bc9aed44468bf4f487975da4d03, type: 3}
+  m_Name: New Test SO
+  m_EditorClassIdentifier: 
+  OverrideData:
+    defaultData: {fileID: 11400000, guid: 006188b0749e05b448164fe0c7a2dcd8, type: 2}
+    newData: {fileID: 11400000, guid: 11decc5caa5d88c4c8c2f1dcae97cfc9, type: 2}

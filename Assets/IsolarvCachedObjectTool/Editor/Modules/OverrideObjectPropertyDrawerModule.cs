@@ -5,21 +5,27 @@ using UnityEngine;
 
 namespace IsolarvCachedObjectTool.Editor
 {
-    public abstract class OverrideObjectPropertyDrawerModule<T, TS> : CustomPropertyDrawerModule
+    public abstract class OverrideObjectPropertyDrawerModule<T> : CustomPropertyDrawerModule
         where T : ScriptableObject, IValidationObject
-        where TS : OverrideActorData<T>
     {
         protected abstract string FolderOfCachedOverride { get; }
+        
+        bool isGeneratingOverrideNewData = false;
         
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             base.OnGUI(position, property, label);
             DrawProperty(property, label);
 
-            UniTask.Create(async () =>
+            if (!isGeneratingOverrideNewData)
             {
-                await TryGenerateOverrideNewData(property);
-            });
+                UniTask.Create(async () =>
+                {
+                    isGeneratingOverrideNewData = true;
+                    await TryGenerateOverrideNewData(property);
+                    isGeneratingOverrideNewData = false;
+                });
+            }
         }
 
         async UniTask TryGenerateOverrideNewData(SerializedProperty property)

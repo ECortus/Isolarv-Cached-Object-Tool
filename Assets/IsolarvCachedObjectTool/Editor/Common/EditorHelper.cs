@@ -57,7 +57,13 @@ namespace IsolarvCachedObjectTool.Editor
             var data = asset as T;
             data?.OnCreateValidate(oldData);
             
-            newDataProperty.objectReferenceValue = AssetDatabase.LoadAssetAtPath(path, typeof(T));
+            var loaded = AssetDatabase.LoadAssetAtPath(path, typeof(T));
+            if (newDataProperty.objectReferenceValue)
+            {
+                EditorUtility.CopySerializedManagedFieldsOnly(newDataProperty.objectReferenceValue, loaded);
+            }
+            
+            newDataProperty.objectReferenceValue = loaded;
             
             EditorUtility.SetDirty(data);
             

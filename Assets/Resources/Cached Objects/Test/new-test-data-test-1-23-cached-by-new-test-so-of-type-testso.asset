@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02cb1bc9aed44468bf4f487975da4d03, type: 3}
-  m_Name: New Test SO
+  m_Script: {fileID: 11500000, guid: a5bb4f8d2361467bad4042f210026a5b, type: 3}
+  m_Name: new-test-data-test-1-23-cached-by-new-test-so-of-type-testso
   m_EditorClassIdentifier: 
-  OverrideData:
-    defaultData: {fileID: 11400000, guid: 31a637a494766bc488b12c3f168d7ccc, type: 2}
-    newData: {fileID: 11400000, guid: ccabf7dbe5d064d499457e72d1175ee1, type: 2}
+  Value: 23

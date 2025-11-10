@@ -15,7 +15,7 @@ namespace IsolarvCachedObjectTool.Tests
 #if UNITY_EDITOR
 
     [CustomPropertyDrawer(typeof(TestOverrideData))]
-    public class TestOverrideDataDrawer : OverrideObjectPropertyDrawerModule<TestData, TestOverrideData>
+    public class TestOverrideDataDrawer : OverrideObjectPropertyDrawerModule<TestData>
     {
         protected override string FolderOfCachedOverride => "Test";
     }

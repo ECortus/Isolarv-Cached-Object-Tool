@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace IsolarvCachedObjectTool.Tests
 {
-    [CreateAssetMenu(fileName = "New Test Data", menuName = "Isolarv/Cached Object Tool/Test Data")]
     public class TestData : ScriptableObject, IValidationObject
     {
         public int Value;
