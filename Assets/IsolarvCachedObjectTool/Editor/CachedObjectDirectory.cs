@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using IsolarvCachedObjectTool.Runtime;
 using Unity.Collections;
 using UnityEditor;
 using UnityEngine;
@@ -44,6 +45,7 @@ namespace IsolarvCachedObjectTool.Editor
             
             public Object GetOwner() => owner;
             public Object GetPrimaryObject() => primaryObject;
+            public Object GetAsset() => AssetDatabase.LoadAssetAtPath<Object>(assetPath);
 
             public CachedObject(Object obj, SerializedProperty parentProperty)
             {
@@ -144,6 +146,18 @@ namespace IsolarvCachedObjectTool.Editor
             }
             
             RemoveAt(index);
+        }
+        
+        public static void TryRemove(Object cached)
+        {
+            for (int i = 0; i < Objects.Count; i++)
+            {
+                if (Objects[i].GetAsset() == cached)
+                {
+                    RemoveAt(i);
+                    break;
+                }
+            }
         }
         
         public static void TryRemove(CachedObject cached)

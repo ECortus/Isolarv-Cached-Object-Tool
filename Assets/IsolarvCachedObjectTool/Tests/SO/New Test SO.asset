@@ -13,5 +13,12 @@ MonoBehaviour:
   m_Name: New Test SO
   m_EditorClassIdentifier: 
   OverrideData:
-    defaultData: {fileID: 11400000, guid: 006188b0749e05b448164fe0c7a2dcd8, type: 2}
-    newData: {fileID: 11400000, guid: 11decc5caa5d88c4c8c2f1dcae97cfc9, type: 2}
+    defaultData: {fileID: 11400000, guid: ce51f2ec53d87f04797901873c1ebcd8, type: 2}
+    newData: {fileID: 11400000, guid: 1f2ec48833caf624b85ffb234d4b5ebd, type: 2}
+  Array:
+  - defaultData: {fileID: 11400000, guid: 31a637a494766bc488b12c3f168d7ccc, type: 2}
+    newData: {fileID: 11400000, guid: 789fb821398fab24bb4a33a65104854a, type: 2}
+  - defaultData: {fileID: 11400000, guid: ce51f2ec53d87f04797901873c1ebcd8, type: 2}
+    newData: {fileID: 11400000, guid: 0705c7a1ec41faf4ea31545cee61af9d, type: 2}
+  - defaultData: {fileID: 11400000, guid: 31a637a494766bc488b12c3f168d7ccc, type: 2}
+    newData: {fileID: 11400000, guid: 600b5bfde93f0fa498a12bbabfd40cad, type: 2}

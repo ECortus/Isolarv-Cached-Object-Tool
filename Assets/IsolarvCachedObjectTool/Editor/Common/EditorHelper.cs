@@ -26,6 +26,7 @@ namespace IsolarvCachedObjectTool.Editor
         {
             if (!IsExistsDirectory(path, newName, out path))
             {
+                Debug.LogError($"[Isolarv Cached Object Tool] Not found directory {path}");
                 return null;
             }
 
@@ -38,11 +39,12 @@ namespace IsolarvCachedObjectTool.Editor
             return null;
         }
         
-        public static Object CreateNewScriptableAsset<T>(string newName, string path, 
+        public static T CreateNewScriptableAsset<T>(string newName, string path, 
             SerializedProperty newDataProperty, T oldData) where T : ScriptableObject, IValidationObject
         {
             if (!IsExistsDirectory(path, newName, out path))
             {
+                Debug.LogError($"[Isolarv Cached Object Tool] Not found directory {path}");
                 return null;
             }
             
@@ -70,13 +72,14 @@ namespace IsolarvCachedObjectTool.Editor
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
             
-            return data;
+            return loaded as T;
         }
         
-        public static Object CreateNewScriptableAsset<T>(string newName, string path) where T : ScriptableObject
+        public static T CreateNewScriptableAsset<T>(string newName, string path) where T : ScriptableObject
         {
             if (!IsExistsDirectory(path, newName, out path))
             {
+                Debug.LogError($"[Isolarv Cached Object Tool] Not found directory {path}");
                 return null;
             }
             
@@ -93,10 +96,8 @@ namespace IsolarvCachedObjectTool.Editor
 
         static bool IsExistsDirectory(string path, string newName, out string fullPath)
         {
-            if (!Directory.Exists(Path.GetFullPath(path)))
+            if (!AssetDatabase.IsValidFolder(path))
             {
-                Debug.LogError($"Not found directory {path}");
-
                 fullPath = "";
                 return false;
             }

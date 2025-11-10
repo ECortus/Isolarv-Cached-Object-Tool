@@ -14,10 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objects:
   - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
-    primaryObject: {fileID: 11400000, guid: 006188b0749e05b448164fe0c7a2dcd8, type: 2}
+    primaryObject: {fileID: 11400000, guid: ce51f2ec53d87f04797901873c1ebcd8, type: 2}
     propertyName: OverrideData
     isArrayElement: 0
     arrayElementIndex: -1
-    instanceId: -10686
-    assetName: new-test-data-test-1-23-cached-by-new-test-so-of-type-testso
-    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-1-23-cached-by-new-test-so-of-type-testso.asset
+    instanceId: -10054
+    assetName: new-test-data-test-2-cached-by-new-test-so-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-2-cached-by-new-test-so-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: 31a637a494766bc488b12c3f168d7ccc, type: 2}
+    propertyName: data
+    isArrayElement: 1
+    arrayElementIndex: 0
+    instanceId: -10088
+    assetName: new-test-data-test-array-index-0-cached-by-new-test-so-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-array-index-0-cached-by-new-test-so-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: ce51f2ec53d87f04797901873c1ebcd8, type: 2}
+    propertyName: data
+    isArrayElement: 1
+    arrayElementIndex: 1
+    instanceId: -10122
+    assetName: new-test-data-test-2-array-index-1-cached-by-new-test-so-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-2-array-index-1-cached-by-new-test-so-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: 31a637a494766bc488b12c3f168d7ccc, type: 2}
+    propertyName: data
+    isArrayElement: 1
+    arrayElementIndex: 2
+    instanceId: -10156
+    assetName: new-test-data-test-array-index-2-cached-by-new-test-so-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-array-index-2-cached-by-new-test-so-of-type-testso.asset

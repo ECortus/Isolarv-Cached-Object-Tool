@@ -81,10 +81,12 @@ namespace IsolarvCachedObjectTool.Editor
 
             if (!instance)
             {
-                instance = EditorHelper.CreateNewScriptableAsset(newName, path, newDataProperty, oldData) as T;
-                CachedObjectDirectory.SingleAdd(instance, parentProperty);
-            }
+                var newInstance = EditorHelper.CreateNewScriptableAsset(newName, path, newDataProperty, oldData);
+                CachedObjectDirectory.SingleAdd(newInstance, parentProperty);
 
+                instance = newInstance;
+            }
+            
             if (!instance)
                 throw new Exception($"[Isolarv Cached Object Tool] Failed to create or get new cached asset: {newName}");
             

@@ -1,4 +1,6 @@
-﻿using Cysharp.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading;
+using Cysharp.Threading.Tasks;
 using IsolarvCachedObjectTool.Runtime;
 using UnityEditor;
 using UnityEngine;
@@ -10,20 +12,20 @@ namespace IsolarvCachedObjectTool.Editor
     {
         protected abstract string FolderOfCachedOverride { get; }
         
-        bool isGeneratingOverrideNewData = false;
+        List<SerializedProperty> busyProperties = new List<SerializedProperty>();
         
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             base.OnGUI(position, property, label);
             DrawProperty(property, label);
 
-            if (!isGeneratingOverrideNewData)
+            if (!busyProperties.Contains(property))
             {
                 UniTask.Create(async () =>
                 {
-                    isGeneratingOverrideNewData = true;
+                    busyProperties.Add(property);
                     await TryGenerateOverrideNewData(property);
-                    isGeneratingOverrideNewData = false;
+                    busyProperties.Remove(property);
                 });
             }
         }
@@ -31,8 +33,18 @@ namespace IsolarvCachedObjectTool.Editor
         async UniTask TryGenerateOverrideNewData(SerializedProperty property)
         {
             var defaultData = property.FindPropertyRelative("defaultData");
+            var newData = property.FindPropertyRelative("newData");
+            
             if (!defaultData.objectReferenceValue)
+            {
+                if (newData.objectReferenceValue)
+                {
+                    CachedObjectDirectory.TryRemove(newData.objectReferenceValue);
+                }
+                
+                newData.objectReferenceValue = null;
                 return;
+            }
 
             var oldEffectData = defaultData.objectReferenceValue as T;
             if (!oldEffectData)
@@ -43,8 +55,6 @@ namespace IsolarvCachedObjectTool.Editor
                 Debug.Log("[Isolarv Cached Object Tool] Tool is not initialized. Try to initialize...");
                 CachedObjectMethods.InitializeCacheDirectory();
             }
-
-            var newData = property.FindPropertyRelative("newData");
 
             var targetObject = property.serializedObject.targetObject;
             var oldName = oldEffectData.name;
