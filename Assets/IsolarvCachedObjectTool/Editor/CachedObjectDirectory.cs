@@ -52,7 +52,7 @@ namespace IsolarvCachedObjectTool.Editor
                 this.owner = parentProperty.serializedObject.targetObject;
                 primaryObject = parentProperty.FindPropertyRelative("defaultData").objectReferenceValue;
 
-                propertyName = parentProperty.name;
+                propertyName = parentProperty.displayName;
                 isArrayElement = EditorHelper.IsArrayElement(parentProperty);
                 arrayElementIndex = EditorHelper.GetArrayIndex(parentProperty);
                 

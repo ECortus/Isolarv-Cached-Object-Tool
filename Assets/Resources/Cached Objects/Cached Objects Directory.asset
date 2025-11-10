@@ -14,34 +14,114 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objects:
   - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
-    primaryObject: {fileID: 11400000, guid: ce51f2ec53d87f04797901873c1ebcd8, type: 2}
-    propertyName: OverrideData
-    isArrayElement: 0
-    arrayElementIndex: -1
-    instanceId: -10054
-    assetName: new-test-data-test-2-cached-by-new-test-so-of-type-testso
-    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-2-cached-by-new-test-so-of-type-testso.asset
-  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
     primaryObject: {fileID: 11400000, guid: 31a637a494766bc488b12c3f168d7ccc, type: 2}
-    propertyName: data
+    propertyName: Element 0
     isArrayElement: 1
     arrayElementIndex: 0
-    instanceId: -10088
-    assetName: new-test-data-test-array-index-0-cached-by-new-test-so-of-type-testso
-    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-array-index-0-cached-by-new-test-so-of-type-testso.asset
-  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
-    primaryObject: {fileID: 11400000, guid: ce51f2ec53d87f04797901873c1ebcd8, type: 2}
-    propertyName: data
-    isArrayElement: 1
-    arrayElementIndex: 1
-    instanceId: -10122
-    assetName: new-test-data-test-2-array-index-1-cached-by-new-test-so-of-type-testso
-    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-2-array-index-1-cached-by-new-test-so-of-type-testso.asset
+    instanceId: -38820
+    assetName: new-test-data-test-array-index-0-cached-by-new-test-so-property-element-0-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-array-index-0-cached-by-new-test-so-property-element-0-of-type-testso.asset
   - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
     primaryObject: {fileID: 11400000, guid: 31a637a494766bc488b12c3f168d7ccc, type: 2}
-    propertyName: data
+    propertyName: Element 1
+    isArrayElement: 1
+    arrayElementIndex: 0
+    instanceId: -38854
+    assetName: new-test-data-test-array-index-0-cached-by-new-test-so-property-element-1-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-array-index-0-cached-by-new-test-so-property-element-1-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: 31a637a494766bc488b12c3f168d7ccc, type: 2}
+    propertyName: Element 1
+    isArrayElement: 1
+    arrayElementIndex: 0
+    instanceId: -38954
+    assetName: new-test-data-test-array-index-0-cached-by-new-test-so-property-element-1-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-array-index-0-cached-by-new-test-so-property-element-1-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: 31a637a494766bc488b12c3f168d7ccc, type: 2}
+    propertyName: Element 0
+    isArrayElement: 1
+    arrayElementIndex: 0
+    instanceId: -39164
+    assetName: new-test-data-test-array-index-0-cached-by-new-test-so-property-element-0-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-array-index-0-cached-by-new-test-so-property-element-0-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: 31a637a494766bc488b12c3f168d7ccc, type: 2}
+    propertyName: Element 1
+    isArrayElement: 1
+    arrayElementIndex: 0
+    instanceId: -39188
+    assetName: new-test-data-test-array-index-0-cached-by-new-test-so-property-element-1-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-array-index-0-cached-by-new-test-so-property-element-1-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: ce51f2ec53d87f04797901873c1ebcd8, type: 2}
+    propertyName: Override Data
+    isArrayElement: 0
+    arrayElementIndex: -1
+    instanceId: -39222
+    assetName: new-test-data-test-2-cached-by-new-test-so-property-override-data-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-2-cached-by-new-test-so-property-override-data-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: 187da1323db282047b568d3e1719ed58, type: 2}
+    propertyName: Element 0
+    isArrayElement: 1
+    arrayElementIndex: 1
+    instanceId: -39632
+    assetName: new-test-data-test-2-cached-by-new-test-so-property-override-data-of-type-testso-array-index-1-cached-by-new-test-so-property-element-0-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-2-cached-by-new-test-so-property-override-data-of-type-testso-array-index-1-cached-by-new-test-so-property-element-0-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: 4556189935e37934faa51e8a6fe5940d, type: 2}
+    propertyName: Element 1
+    isArrayElement: 1
+    arrayElementIndex: 1
+    instanceId: -39732
+    assetName: new-test-data-test-array-index-0-cached-by-new-test-so-property-element-0-of-type-testso-array-index-1-cached-by-new-test-so-property-element-1-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-array-index-0-cached-by-new-test-so-property-element-0-of-type-testso-array-index-1-cached-by-new-test-so-property-element-1-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: 31a637a494766bc488b12c3f168d7ccc, type: 2}
+    propertyName: Element 0
+    isArrayElement: 1
+    arrayElementIndex: 1
+    instanceId: -39844
+    assetName: new-test-data-test-array-index-1-cached-by-new-test-so-property-element-0-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-array-index-1-cached-by-new-test-so-property-element-0-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: ce51f2ec53d87f04797901873c1ebcd8, type: 2}
+    propertyName: Element 1
+    isArrayElement: 1
+    arrayElementIndex: 1
+    instanceId: -39956
+    assetName: new-test-data-test-2-array-index-1-cached-by-new-test-so-property-element-1-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-2-array-index-1-cached-by-new-test-so-property-element-1-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: 006188b0749e05b448164fe0c7a2dcd8, type: 2}
+    propertyName: Element 0
+    isArrayElement: 1
+    arrayElementIndex: 0
+    instanceId: -40560
+    assetName: new-test-data-test-1-23-array-index-0-cached-by-new-test-so-property-element-0-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-1-23-array-index-0-cached-by-new-test-so-property-element-0-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: 31a637a494766bc488b12c3f168d7ccc, type: 2}
+    propertyName: Element 2
+    isArrayElement: 1
+    arrayElementIndex: 0
+    instanceId: -40646
+    assetName: new-test-data-test-array-index-0-cached-by-new-test-so-property-element-2-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-array-index-0-cached-by-new-test-so-property-element-2-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: 006188b0749e05b448164fe0c7a2dcd8, type: 2}
+    propertyName: Element 1
+    isArrayElement: 1
+    arrayElementIndex: 1
+    instanceId: -40760
+    assetName: new-test-data-test-1-23-array-index-1-cached-by-new-test-so-property-element-1-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-1-23-array-index-1-cached-by-new-test-so-property-element-1-of-type-testso.asset
+  - owner: {fileID: 11400000, guid: aa8877afdaf47df4ea6dbaa2d27bed34, type: 2}
+    primaryObject: {fileID: 11400000, guid: 006188b0749e05b448164fe0c7a2dcd8, type: 2}
+    propertyName: Element 2
     isArrayElement: 1
     arrayElementIndex: 2
-    instanceId: -10156
-    assetName: new-test-data-test-array-index-2-cached-by-new-test-so-of-type-testso
-    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-array-index-2-cached-by-new-test-so-of-type-testso.asset
+    instanceId: -40894
+    assetName: new-test-data-test-1-23-array-index-2-cached-by-new-test-so-property-element-2-of-type-testso
+    assetPath: Assets/Resources/Cached Objects/Test/new-test-data-test-1-23-array-index-2-cached-by-new-test-so-property-element-2-of-type-testso.asset

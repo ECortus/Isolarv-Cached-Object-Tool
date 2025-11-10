@@ -41,11 +41,14 @@ namespace IsolarvCachedObjectTool.Editor
             return path;
         }
         
-        public static string CreateAndGetCachedAssetName(string name, Object targetObject)
+        public static string CreateAndGetCachedAssetName(string name, Object targetObject, SerializedProperty parentProperty)
         {
-            string newName = $"{name}-cached-by-{targetObject.name}-of-type-{targetObject.GetType().Name}";
-            newName = newName.ToLower().Replace(" ", "-");
+            string newName = 
+                $"{name}-cached-by-{targetObject.name}" +
+                $"-property-{parentProperty.displayName}" +
+                $"-of-type-{targetObject.GetType().Name}";
             
+            newName = newName.ToLower().Replace(" ", "-");
             return newName;
         }
 
@@ -81,14 +84,16 @@ namespace IsolarvCachedObjectTool.Editor
 
             if (!instance)
             {
+                Debug.Log($"[Isolarv Cached Object Tool] Creating new cached asset: {newName} at path {path} of old {oldData}");
+                
                 var newInstance = EditorHelper.CreateNewScriptableAsset(newName, path, newDataProperty, oldData);
+                
+                if (!newInstance)
+                    throw new Exception($"[Isolarv Cached Object Tool] Failed to create or get new cached asset: {newName}");
+                
                 CachedObjectDirectory.SingleAdd(newInstance, parentProperty);
-
                 instance = newInstance;
             }
-            
-            if (!instance)
-                throw new Exception($"[Isolarv Cached Object Tool] Failed to create or get new cached asset: {newName}");
             
             instance.OnUpdateValidate(oldData);
             return instance;

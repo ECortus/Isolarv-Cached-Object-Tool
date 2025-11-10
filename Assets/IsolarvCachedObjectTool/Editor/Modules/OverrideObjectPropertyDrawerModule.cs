@@ -19,7 +19,6 @@ namespace IsolarvCachedObjectTool.Editor
             base.OnGUI(position, property, label);
             DrawProperty(property, label);
 
-            if (!busyProperties.Contains(property))
             {
                 UniTask.Create(async () =>
                 {
@@ -65,7 +64,7 @@ namespace IsolarvCachedObjectTool.Editor
                 oldName += $"-array-index-{index}";
             }
             
-            string newName = EditorUtils.CreateAndGetCachedAssetName(oldName, targetObject);
+            string newName = EditorUtils.CreateAndGetCachedAssetName(oldName, targetObject, property);
             EditorUtils.CreateOrGetNewCachedAsset(newName, FolderOfCachedOverride, property, newData, oldEffectData);
 
             property.serializedObject.ApplyModifiedProperties();
