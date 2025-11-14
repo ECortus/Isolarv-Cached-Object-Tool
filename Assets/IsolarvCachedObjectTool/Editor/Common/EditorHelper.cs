@@ -8,7 +8,7 @@ using Object = System.Object;
 
 namespace IsolarvCachedObjectTool.Editor
 {
-    public static class EditorHelper
+    internal static class EditorHelper
     {
         public static Object CreateOrGetNewScriptableAsset<T>(string newName, string path, 
             SerializedProperty newDataProperty, T oldData) where T : ScriptableObject, IValidationObject

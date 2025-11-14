@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace IsolarvCachedObjectTool.Editor
 {
-    public abstract class OverrideObjectPropertyDrawerModule<T> : CustomPropertyDrawerModule
+    internal abstract class OverrideObjectPropertyDrawerModule<T> : CustomPropertyDrawerModule
         where T : ScriptableObject, IValidationObject
     {
         protected abstract string FolderOfCachedOverride { get; }

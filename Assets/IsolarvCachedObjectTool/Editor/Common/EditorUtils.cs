@@ -7,7 +7,7 @@ using Object = UnityEngine.Object;
 
 namespace IsolarvCachedObjectTool.Editor
 {
-    public static class EditorUtils
+    internal static class EditorUtils
     {
         public static string GetCurrentAssetDirectory()
         {

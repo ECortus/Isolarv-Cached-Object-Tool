@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace IsolarvCachedObjectTool.Editor
 {
-    public static class CachedObjectMethods
+    internal static class CachedObjectMethods
     {
         [MenuItem("Tools/Isolarv/Cached & Override/Initialize Cache Directory", false, 115)]
         public static void InitializeCacheDirectory()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace IsolarvCachedObjectTool.Editor
 {
-    public abstract class CustomPropertyDrawerModule : PropertyDrawer
+    internal abstract class CustomPropertyDrawerModule : PropertyDrawer
     {
         Rect _rect;
         

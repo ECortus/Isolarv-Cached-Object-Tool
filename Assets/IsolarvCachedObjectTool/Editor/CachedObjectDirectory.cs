@@ -8,7 +8,7 @@ using Object = UnityEngine.Object;
 
 namespace IsolarvCachedObjectTool.Editor
 {
-    public class CachedObjectDirectory : ScriptableObject
+    internal class CachedObjectDirectory : ScriptableObject
     {
         static CachedObjectDirectory _instance;
         static CachedObjectDirectory Instance

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace IsolarvCachedObjectTool.Tests
 {
-    public class TestSO : ScriptableObject
+    internal class TestSO : ScriptableObject
     {
         public TestOverrideData OverrideData;
 
