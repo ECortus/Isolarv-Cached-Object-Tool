@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using IsolarvCachedObjectTool.Runtime;
+using CachingObjectsTool.Editor.Common;
+using CachingObjectsTool.Runtime;
 using Unity.Collections;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace IsolarvCachedObjectTool.Editor
+namespace CachingObjectsTool.Editor
 {
     internal class CachedObjectDirectory : ScriptableObject
     {

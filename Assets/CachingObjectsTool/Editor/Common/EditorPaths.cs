@@ -1,4 +1,4 @@
-﻿namespace IsolarvCachedObjectTool.Editor
+﻿namespace CachingObjectsTool.Editor.Common
 {
     internal static class EditorPaths
     {

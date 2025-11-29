@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace IsolarvCachedObjectTool.Runtime
+namespace CachingObjectsTool.Runtime
 {
     internal class ExpandableAttribute : PropertyAttribute
     {

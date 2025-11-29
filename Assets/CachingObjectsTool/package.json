@@ -1,0 +1,17 @@
+  
+{
+	"name": "com.isolarv.caching-objects-tool",
+	"version": "1.0.0",
+	"author": 
+	{
+		"name" : "Isolarv",
+		"email" : "",
+		"url" : ""
+	},
+	"displayName": "Caching Objects Tool",
+	"category": "Isolarv",
+	"description": "Tool to caching scriptable objects in Resources folder.",
+	"license": "MIT",
+	"hideInEditor": false,
+	"dependencies": { }
+}

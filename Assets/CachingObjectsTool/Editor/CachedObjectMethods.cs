@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using CachingObjectsTool.Editor.Common;
 using UnityEditor;
 using UnityEngine;
 
-namespace IsolarvCachedObjectTool.Editor
+namespace CachingObjectsTool.Editor
 {
     internal static class CachedObjectMethods
     {

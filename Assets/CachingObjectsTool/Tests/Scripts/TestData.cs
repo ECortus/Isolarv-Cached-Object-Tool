@@ -1,7 +1,7 @@
-﻿using IsolarvCachedObjectTool.Runtime;
+﻿using CachingObjectsTool.Runtime;
 using UnityEngine;
 
-namespace IsolarvCachedObjectTool.Tests
+namespace CachingObjectsTool.Tests
 {
     public class TestData : ScriptableObject, IValidationObject
     {

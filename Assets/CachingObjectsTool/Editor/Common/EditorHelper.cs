@@ -1,12 +1,12 @@
 ﻿using System;
 using System.IO;
 using System.Text.RegularExpressions;
-using IsolarvCachedObjectTool.Runtime;
+using CachingObjectsTool.Runtime;
 using UnityEditor;
 using UnityEngine;
 using Object = System.Object;
 
-namespace IsolarvCachedObjectTool.Editor
+namespace CachingObjectsTool.Editor.Common
 {
     internal static class EditorHelper
     {

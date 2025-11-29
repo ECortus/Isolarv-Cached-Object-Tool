@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace IsolarvCachedObjectTool.Editor
+namespace CachingObjectsTool.Editor.Common
 {
     [CanEditMultipleObjects]
     [CustomEditor(typeof(UnityEngine.Object), true)]

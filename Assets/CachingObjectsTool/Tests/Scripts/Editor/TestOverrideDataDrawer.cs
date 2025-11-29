@@ -1,7 +1,9 @@
-﻿using IsolarvCachedObjectTool.Tests;
+﻿#if UNITY_EDITOR
+
+using CachingObjectsTool.Editor.Modules;
 using UnityEditor;
 
-namespace IsolarvCachedObjectTool.Editor
+namespace CachingObjectsTool.Tests.Editor
 {
     [CustomPropertyDrawer(typeof(TestOverrideData))]
     internal class TestOverrideDataDrawer : OverrideObjectPropertyDrawerModule<TestData>
@@ -9,3 +11,5 @@ namespace IsolarvCachedObjectTool.Editor
         protected override string FolderOfCachedOverride => "Test";
     }
 }
+
+#endif

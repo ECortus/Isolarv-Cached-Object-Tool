@@ -1,7 +1,7 @@
 ﻿using System;
-using IsolarvCachedObjectTool.Runtime;
+using CachingObjectsTool.Runtime;
 
-namespace IsolarvCachedObjectTool.Tests
+namespace CachingObjectsTool.Tests
 {
     [Serializable]
     public class TestOverrideData : OverrideActorData<TestData> { }

@@ -2,9 +2,9 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace IsolarvCachedObjectTool.Editor
+namespace CachingObjectsTool.Editor.Modules
 {
-    internal abstract class CustomPropertyDrawerModule : PropertyDrawer
+    public abstract class CustomPropertyDrawerModule : PropertyDrawer
     {
         Rect _rect;
         

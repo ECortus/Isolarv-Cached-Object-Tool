@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace IsolarvCachedObjectTool.Runtime
+namespace CachingObjectsTool.Runtime
 {
     [Serializable]
     public abstract class OverrideActorData<T>

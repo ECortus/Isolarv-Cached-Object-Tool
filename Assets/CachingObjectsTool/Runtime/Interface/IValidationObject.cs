@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace IsolarvCachedObjectTool.Runtime
+namespace CachingObjectsTool.Runtime
 {
     public interface IValidationObject
     {

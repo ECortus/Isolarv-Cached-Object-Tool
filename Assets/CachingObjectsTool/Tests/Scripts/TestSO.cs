@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace IsolarvCachedObjectTool.Tests
+namespace CachingObjectsTool.Tests
 {
     internal class TestSO : ScriptableObject
     {

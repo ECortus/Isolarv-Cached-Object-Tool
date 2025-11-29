@@ -1,11 +1,11 @@
 ﻿using System;
 using System.IO;
-using IsolarvCachedObjectTool.Runtime;
+using CachingObjectsTool.Runtime;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace IsolarvCachedObjectTool.Editor
+namespace CachingObjectsTool.Editor.Common
 {
     internal static class EditorUtils
     {

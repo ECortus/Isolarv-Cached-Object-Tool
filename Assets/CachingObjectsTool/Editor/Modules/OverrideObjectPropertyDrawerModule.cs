@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
+using CachingObjectsTool.Editor.Common;
+using CachingObjectsTool.Runtime;
 using Cysharp.Threading.Tasks;
-using IsolarvCachedObjectTool.Runtime;
 using UnityEditor;
 using UnityEngine;
 
-namespace IsolarvCachedObjectTool.Editor
+namespace CachingObjectsTool.Editor.Modules
 {
-    internal abstract class OverrideObjectPropertyDrawerModule<T> : CustomPropertyDrawerModule
+    public abstract class OverrideObjectPropertyDrawerModule<T> : CustomPropertyDrawerModule
         where T : ScriptableObject, IValidationObject
     {
         protected abstract string FolderOfCachedOverride { get; }
