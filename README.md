@@ -1,5 +1,5 @@
-# Isolarv-Cached-Object-Tool
-Tool to create cached scriptable objects.
+# Caching-Objects-Tool
+Tool to caching scriptable objects in Resources folder.
 
 ## To install
 
@@ -12,11 +12,11 @@ Insert dependencies packages into project `manifest.json`:
 After import package via UPM:
 
 ```
-https://github.com/ECortus/Isolarv-Cached-Object-Tool.git?path=Assets/IsolarvCachedObjectTool
+https://github.com/ECortus/Caching-Objects-Tool.git?path=Assets/CachingObjectsTool
 ```
 
 or insert directly to `manifest.json`:
 
 ```
-"com.isolarv.cached-object-tool": "https://github.com/ECortus/Isolarv-Cached-Object-Tool.git?path=Assets/IsolarvCachedObjectTool",
+"com.isolarv.caching-objects-tool": "https://github.com/ECortus/Caching-Objects-Tool.git?path=Assets/CachingObjectsTool",
 ```
